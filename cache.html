@@ -8,9 +8,9 @@ color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
 </style>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Installing Offline Cache ... " + Percent + "%"};
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="오프라인 캐시 먹이는 중..." + Percent + "%"};
 function DisplayCacheProgress(){
-setTimeout(function(){msgs.innerHTML="Cache Installed Successfully";},2000);
+setTimeout(function(){msgs.innerHTML="성공적으로 먹였습니다. 치킨 먹고 싶따";},2000);
 setTimeout(function(){location.reload();},3000);
 }
 window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
